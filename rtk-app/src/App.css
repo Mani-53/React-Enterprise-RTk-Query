@@ -1,0 +1,295 @@
+body {
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #1f1c2c, #928dab);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.box {
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+}
+
+#logoimage {
+    height: 50px;
+    width: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+#navimage {
+    display: flex;
+    padding: 20px 10px;
+}
+
+#mainnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    background: linear-gradient(90deg, #141e30, #243b55);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: 70px;
+}
+
+#ul {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+}
+
+.navlink {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.navlink:hover {
+    color: #00f5ff;
+}
+
+.json {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: linear-gradient(135deg, #232526, #414345);
+    color: white;
+    margin-top: 70px;
+}
+
+#jsoninput {
+    display: flex;
+    padding: 20px;
+    gap: 1em;
+    padding-left: 40px;
+}
+
+#jsoninput input {
+    border-radius: 13px;
+    padding: 15px 25px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    background: linear-gradient(145deg, #ffffff, #e6e9f0);
+}
+
+#jsoninput button {
+    padding: 10px 35px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 0px;
+    transition: all 0.4s ease;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#jsoninput button:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
+}
+
+#jsonul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-left: 0px;
+}
+
+#jsonul li {
+    background: linear-gradient(135deg, #fc466b, #3f5efb);
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+}
+
+#jsonul li button {
+    border-radius: 12px;
+    padding: 8px 20px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border: 0px;
+    transition: all 0.4s ease;
+    color: white;
+}
+
+#jsonul li button:hover {
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.7);
+}
+
+.products {
+    background: linear-gradient(120deg, #e0c3fc, #8ec5fc);
+    display: flex;
+    padding: 20px;
+    gap: 5em;
+    margin-top: 70px;
+}
+
+#productsul {
+    list-style: none;
+    margin-top: 0px;
+}
+
+#productsul li {
+    padding: 10px;
+    background: linear-gradient(135deg, #ffffff, #dfe9f3);
+    border-radius: 14px;
+    width: 300px;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+#productsul li:hover {
+    background: linear-gradient(135deg, #d4fc79, #96e6a1);
+    transform: translateY(-3px);
+}
+
+.productsnavlink {
+    text-decoration: none;
+    color: #243b55;
+    font-weight: 500;
+}
+
+.productdetails {
+    display: flex;
+    border-radius: 16px;
+    flex-direction: column;
+    height: 450px;
+    width: 300px;
+    background: linear-gradient(145deg, #ffffff, #f0f4ff);
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: fixed;
+    right: 400px;
+}
+
+.productdetails:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+#productdetailsimage {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.loadingimage {
+    height: 60px;
+    width: 60px;
+}
+
+.recipes {
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    display: flex;
+    padding: 20px;
+    gap: 5em;
+    margin-top: 70px;
+}
+
+#recipesul {
+    list-style: none;
+    margin-top: 0px;
+}
+
+#recipesul li {
+    padding: 10px;
+    background: linear-gradient(135deg, #ffffff, #ffe0c3);
+    border-radius: 14px;
+    width: 300px;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+#recipesul li:hover {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    transform: translateY(-3px);
+}
+
+.recipesnavlink {
+    text-decoration: none;
+    color: #5a2a00;
+    font-weight: 500;
+}
+
+.recipedetails {
+    display: flex;
+    border-radius: 16px;
+    flex-direction: column;
+    height: 450px;
+    width: 300px;
+    background: linear-gradient(145deg, #ffffff, #fff5e6);
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: fixed;
+    right: 400px;
+}
+
+.recipedetails:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.recipedetails image {
+    border-radius: 13px;
+}
+
+.maincounter {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.counter {
+    display: flex;
+    margin-top: 70px;
+    color: white;
+    flex-direction: column;
+    background: linear-gradient(140deg, salmon, chocolate);
+    height: 300px;
+    width: 300px;
+    border-radius: 14px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.counter button {
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 15px;
+    background: linear-gradient(90deg, yellowgreen, darkred);
+    color: #fff;
+    font-weight: 400;
+    transition: all 0.2s ease-in;
+}
+
+.counter button:hover {
+    box-shadow: 0px 1px 10px rgba(0, 128, 0, 0.6);
+}
